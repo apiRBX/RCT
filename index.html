@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roblox API Tracker - Build 0.732.0.7321040</title>
+  <style>
+    :root {
+      --bg-color: #0d1117;
+      --card-bg: #161b22;
+      --text-color: #c9d1d9;
+      --accent-color: #58a6ff;
+      --border-color: #30363d;
+
+      --verb-add: #3fb950;       /* Vibrant Green */
+      --verb-remove: #f85149;    /* Bright Crimson */
+      --verb-change: #d29922;    /* Amber Gold */
+
+      --kw-class: #38bdf8;      /* Bright Cyan */
+      --kw-prop: #2dd4bf;       /* Teal */
+      --kw-func: #4ade80;       /* Soft Light Green */
+      --kw-event: #fb923c;      /* Bright Orange */
+      --kw-callback: #c084fc;   /* Bright Purple */
+      --kw-enum: #f97316;       /* Deep Orange */
+      --kw-enumitem: #f43f5e;   /* Rose / Pink Magenta */
+
+      --type-color: #e5c07b;    /* Warm Gold */
+      --param-color: #e06c75;   /* Coral Soft Red */
+      --op-color: #38bdf8;      /* Cyan */
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 1200px; }
+
+    header {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+    h1 { margin: 0 0 1.25rem 0; font-size: 1.5rem; color: #f0f6fc; }
+    
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.25rem;
+      font-size: 0.85rem;
+    }
+    .meta-item { display: flex; flex-direction: column; }
+    .meta-label { color: #8b949e; font-weight: 600; text-transform: uppercase; font-size: 0.75rem; margin-bottom: 0.35rem; letter-spacing: 0.05em; }
+    .meta-value { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; color: #f0f6fc; }
+
+    a { color: var(--accent-color); text-decoration: none; font-weight: 500; }
+    a:hover { text-decoration: underline; }
+
+    .changelog-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.75rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+    .changelog-card h2 {
+      margin-top: 0;
+      color: #f0f6fc;
+      font-size: 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    ul.changelog-list { list-style-type: none; padding-left: 0; margin: 0; }
+    ul.changelog-list li {
+      padding: 0.25rem 0;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    ul.changelog-list li:hover { background-color: rgba(177, 186, 196, 0.06); border-radius: 4px; }
+
+    code {
+      background-color: #21262d;
+      padding: 0.15rem 0.4rem;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      color: #58a6ff;
+      border: 1px solid rgba(240, 246, 252, 0.1);
+    }
+
+    .verb { font-weight: 700; margin-right: 4px; }
+    .verb-add { color: var(--verb-add); }
+    .verb-remove { color: var(--verb-remove); }
+    .verb-change { color: var(--verb-change); }
+
+    .kw { font-weight: 700; margin-right: 4px; }
+    .kw-class { color: var(--kw-class); }
+    .kw-prop { color: var(--kw-prop); }
+    .kw-func { color: var(--kw-func); }
+    .kw-event { color: var(--kw-event); }
+    .kw-callback { color: var(--kw-callback); }
+    .kw-enum { color: var(--kw-enum); }
+    .kw-enumitem { color: var(--kw-enumitem); }
+
+    .type { color: var(--type-color); font-weight: 600; }
+    .param-name { color: var(--param-color); }
+    .op { color: var(--op-color); font-weight: bold; }
+
+    .badge {
+      display: inline-block;
+      padding: 0.1em 0.5em;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border-radius: 4px;
+      margin: 0 3px;
+      vertical-align: baseline;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+    }
+    .badge-sec { background: rgba(248, 81, 73, 0.15); color: #ff7b72; border: 1px solid rgba(248, 81, 73, 0.35); }
+    .badge-tag { background: rgba(210, 153, 34, 0.15); color: #d29922; border: 1px solid rgba(210, 153, 34, 0.35); }
+    .badge-cap { background: rgba(163, 113, 247, 0.18); color: #d2a8ff; border: 1px solid rgba(163, 113, 247, 0.4); }
+    
+    .badge-thread { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35); }
+    .badge-legacy { background: rgba(234, 179, 8, 0.15); color: #eab308; border: 1px solid rgba(234, 179, 8, 0.35); }
+    .badge-memory { background: rgba(74, 222, 128, 0.15); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.35); }
+    .badge-extends { background: rgba(192, 132, 252, 0.15); color: #c084fc; border: 1px solid rgba(192, 132, 252, 0.35); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Roblox API Tracker</h1>
+      <div class="meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">Client Version</span>
+          <span class="meta-value"><code>0.732.0.7321040</code></span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Version Hash</span>
+          <span class="meta-value"><code>version-ff6341faef444107</code></span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Official Release Notes</span>
+          <a href="https://create.roblox.com/docs/release-notes/release-notes-732" target="_blank" rel="noopener">Release Notes 732 ↗</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="changelog-card">
+      <h2>API Differences</h2>
+      <ul class="changelog-list">
+        <li class="root-item" style="margin-top: 0.75rem;">_Initial release or baseline sync._</li>
+      </ul>
+    </main>
+  </div>
+</body>
+</html>
