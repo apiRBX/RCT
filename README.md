@@ -2,98 +2,60 @@
 
 | Metadata | Details |
 | :--- | :--- |
-| **Version** | `0.735.0.7351131` |
-| **Version Hash** | `version-dcbeee682ce74ee0` |
-| **Official Release Notes** | [Release Notes 735](https://create.roblox.com/docs/release-notes/release-notes-735) |
+| **Version** | `0.736.0.7361342` |
+| **Version Hash** | `version-9e2e9085d9794dd1` |
+| **Official Release Notes** | [Release Notes 736](https://create.roblox.com/docs/release-notes/release-notes-736) |
 
 ---
 
 ## Changelog
 
-* Update Class [AnimationNodeDefinition](https://create.roblox.com/docs/reference/engine/classes/AnimationNodeDefinition) [⬆️Extends: Instance] [🧠Memory: Instances]
-  * Changed the security of Function [AnimationNodeDefinition.AddInputPin](https://create.roblox.com/docs/reference/engine/classes/AnimationNodeDefinition#AddInputPin)
-    from: {🔒RobloxScriptSecurity}
-    to: {🔒None}
-  * Changed the security of Function [AnimationNodeDefinition.GetOrderedInputPinNames](https://create.roblox.com/docs/reference/engine/classes/AnimationNodeDefinition#GetOrderedInputPinNames)
-    from: {🔒RobloxScriptSecurity}
-    to: {🔒None}
-  * Changed the security of Function [AnimationNodeDefinition.RemoveInputPin](https://create.roblox.com/docs/reference/engine/classes/AnimationNodeDefinition#RemoveInputPin)
-    from: {🔒RobloxScriptSecurity}
-    to: {🔒None}
-  * Changed the security of Function [AnimationNodeDefinition.SetOrderedInputPinNames](https://create.roblox.com/docs/reference/engine/classes/AnimationNodeDefinition#SetOrderedInputPinNames)
-    from: {🔒RobloxScriptSecurity}
-    to: {🔒None}
-  * Changed the security of Event [AnimationNodeDefinition.InputPinsChanged](https://create.roblox.com/docs/reference/engine/classes/AnimationNodeDefinition#InputPinsChanged)
-    from: {🔒RobloxScriptSecurity}
-    to: {🔒None}
-* Update Class [AppLifecycleObserverService](https://create.roblox.com/docs/reference/engine/classes/AppLifecycleObserverService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
-  * Added Function [AppLifecycleObserverService.TriggerOnPageMilestone](https://create.roblox.com/docs/reference/engine/classes/AppLifecycleObserverService#TriggerOnPageMilestone) (page: PageType, milestone: PageMilestoneType) -> null
+* Update Class [AdService](https://create.roblox.com/docs/reference/engine/classes/AdService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
+  * Added Function [AdService.RegisterImpressionSource](https://create.roblox.com/docs/reference/engine/classes/AdService#RegisterImpressionSource) (instance: Instance, adIntegrationPlacementId: string) -> null {🚧Monetization}
+* Update Class [AssetService](https://create.roblox.com/docs/reference/engine/classes/AssetService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
+  * Added Function [AssetService.CreateDecalAsync](https://create.roblox.com/docs/reference/engine/classes/AssetService#CreateDecalAsync) (content: Dictionary) -> Decal [🏷️ Yields] {🚧Basic}
+  * Added Function [AssetService.CreateTextureAsync](https://create.roblox.com/docs/reference/engine/classes/AssetService#CreateTextureAsync) (content: Dictionary) -> Texture [🏷️ Yields] {🚧Basic}
 * Update Class [AvatarAbilityRules](https://create.roblox.com/docs/reference/engine/classes/AvatarAbilityRules) [⬆️Extends: Instance] [🧠Memory: Instances]
-  * Removed Property AvatarAbilityRules.EnableStrafing
-* Added Class [BranchService](https://create.roblox.com/docs/reference/engine/classes/BranchService) {🔒None} [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
-* Update Class [GenerationService](https://create.roblox.com/docs/reference/engine/classes/GenerationService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
-  * Added Function [GenerationService.ExportMeshToGlbAsync](https://create.roblox.com/docs/reference/engine/classes/GenerationService#ExportMeshToGlbAsync) (meshPart: MeshPart) -> string [🏷️ Yields] {🚧DynamicGeneration}
-  * Added Function [GenerationService.LoadModelFromUrlAsync](https://create.roblox.com/docs/reference/engine/classes/GenerationService#LoadModelFromUrlAsync) (url: string) -> Model [🏷️ Yields] {🚧DynamicGeneration}
-* Added Class [IntentService](https://create.roblox.com/docs/reference/engine/classes/IntentService) {🔒None} [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
-* Update Class [LogService](https://create.roblox.com/docs/reference/engine/classes/LogService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
-  * Added Function [LogService.GetLogHistoryAsync](https://create.roblox.com/docs/reference/engine/classes/LogService#GetLogHistoryAsync) (user: User) -> Array [🏷️ Yields] {🚧Logging}
-* Update Class [Terrain](https://create.roblox.com/docs/reference/engine/classes/Terrain) [⬆️Extends: BasePart] [🧠Memory: Instances] [🏷️ NotCreatable]
-  * Added Function [Terrain.GenerateWaterFlowMap](https://create.roblox.com/docs/reference/engine/classes/Terrain#GenerateWaterFlowMap) (generateFoam: bool) -> null {🚧Environment}
-  * Added Function [Terrain.ResetWaterFlowMap](https://create.roblox.com/docs/reference/engine/classes/Terrain#ResetWaterFlowMap) () -> null {🚧Environment}
-* Update Class [Workspace](https://create.roblox.com/docs/reference/engine/classes/Workspace) [⬆️Extends: WorldRoot] [🧠Memory: BaseParts] [🏷️ NotCreatable] [🏷️ Service]
-  * Added Property [Workspace.ExpandedTerrain](https://create.roblox.com/docs/reference/engine/classes/Workspace#ExpandedTerrain): RolloutState [🏷️ NotScriptable] [⚡ThreadSafety: ReadSafe]
-* Update Class [Player](https://create.roblox.com/docs/reference/engine/classes/Player) [⬆️Extends: Instance] [🧠Memory: Instances]
-  * Added Function [Player.GetFriendsInUniverseAsync](https://create.roblox.com/docs/reference/engine/classes/Player#GetFriendsInUniverseAsync) () -> Array [🏷️ Yields] {🚧Players, Social}
-* Added Class [PlayerControlState](https://create.roblox.com/docs/reference/engine/classes/PlayerControlState) {🔒None} [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotBrowsable]
-  * Added Property [PlayerControlState.Owner](https://create.roblox.com/docs/reference/engine/classes/PlayerControlState#Owner) [⚡ThreadSafety: ReadSafe]
-  * Added Function [PlayerControlState.AddBoolField](https://create.roblox.com/docs/reference/engine/classes/PlayerControlState#AddBoolField)
-  * Added Function [PlayerControlState.AddCFrameField](https://create.roblox.com/docs/reference/engine/classes/PlayerControlState#AddCFrameField)
-  * Added Function [PlayerControlState.AddInstanceField](https://create.roblox.com/docs/reference/engine/classes/PlayerControlState#AddInstanceField)
-  * Added Function [PlayerControlState.AddIntField](https://create.roblox.com/docs/reference/engine/classes/PlayerControlState#AddIntField)
-  * Added Function [PlayerControlState.AddNumberField](https://create.roblox.com/docs/reference/engine/classes/PlayerControlState#AddNumberField)
-  * Added Function [PlayerControlState.AddUnitVector3Field](https://create.roblox.com/docs/reference/engine/classes/PlayerControlState#AddUnitVector3Field)
-  * Added Function [PlayerControlState.AddVector2Field](https://create.roblox.com/docs/reference/engine/classes/PlayerControlState#AddVector2Field)
-  * Added Function [PlayerControlState.AddVector3Field](https://create.roblox.com/docs/reference/engine/classes/PlayerControlState#AddVector3Field)
-  * Added Function [PlayerControlState.GetChangedState](https://create.roblox.com/docs/reference/engine/classes/PlayerControlState#GetChangedState)
-  * Added Function [PlayerControlState.GetReplicationWeight](https://create.roblox.com/docs/reference/engine/classes/PlayerControlState#GetReplicationWeight)
-  * Added Function [PlayerControlState.GetState](https://create.roblox.com/docs/reference/engine/classes/PlayerControlState#GetState)
-  * Added Function [PlayerControlState.SetField](https://create.roblox.com/docs/reference/engine/classes/PlayerControlState#SetField)
-  * Added Function [PlayerControlState.UpdateFields](https://create.roblox.com/docs/reference/engine/classes/PlayerControlState#UpdateFields)
-  * Added Event [PlayerControlState.OnStateChanged](https://create.roblox.com/docs/reference/engine/classes/PlayerControlState#OnStateChanged)
-* Update Class [RealtimeMedia](https://create.roblox.com/docs/reference/engine/classes/RealtimeMedia) [⬆️Extends: Instance] [🧠Memory: Instances]
-  * Added Event [RealtimeMedia.AudioInputRequested](https://create.roblox.com/docs/reference/engine/classes/RealtimeMedia#AudioInputRequested) {🚧InternalTest}
-* Update Class [SafetyService](https://create.roblox.com/docs/reference/engine/classes/SafetyService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
-  * Added Function [SafetyService.ReportBuildUIClose](https://create.roblox.com/docs/reference/engine/classes/SafetyService#ReportBuildUIClose) () -> null
-  * Added Function [SafetyService.ReportBuildUIOpen](https://create.roblox.com/docs/reference/engine/classes/SafetyService#ReportBuildUIOpen) () -> null
-* Added Class [ScriptScannerService](https://create.roblox.com/docs/reference/engine/classes/ScriptScannerService) {🔒None} [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
-* Update Class [Studio](https://create.roblox.com/docs/reference/engine/classes/Studio) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
-  * Removed Property Studio.CameraAdaptiveSpeed
-  * Removed Property Studio.CameraOrbitSensitivity
-  * Removed Property Studio.CameraPanSensitivity
-  * Removed Property Studio.CameraZoomSpeed
-* Update Class [StudioCameraService](https://create.roblox.com/docs/reference/engine/classes/StudioCameraService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
-  * Changed the serialization of Property [StudioCameraService.LockCameraSpeed](https://create.roblox.com/docs/reference/engine/classes/StudioCameraService#LockCameraSpeed)
-    from: [💾|📁Serialized]
-    to: [🚫None]
-* Update Class [WindowProtocolService](https://create.roblox.com/docs/reference/engine/classes/WindowProtocolService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
-  * Added Function [WindowProtocolService.OnDragAreaRightClicked](https://create.roblox.com/docs/reference/engine/classes/WindowProtocolService#OnDragAreaRightClicked) (windowId: int) -> null
-* Added Enum [IntentReplicability](https://create.roblox.com/docs/reference/engine/enums/IntentReplicability)
-* Added Enum [PageMilestoneType](https://create.roblox.com/docs/reference/engine/enums/PageMilestoneType)
-  * Added EnumItem `Interactive` (0)
-  * Added EnumItem `SurfaceMounted` (1)
-  * Added EnumItem `FunctionallyReady` (2)
-  * Added EnumItem `SurfaceReady` (3)
-* Added Enum [PageType](https://create.roblox.com/docs/reference/engine/enums/PageType)
-  * Added EnumItem `AvatarEditor` (0)
-  * Added EnumItem `Party` (1)
-  * Added EnumItem `ExperienceDetail` (2)
-  * Added EnumItem `AvatarMarketplace` (3)
-* Added Enum [ScriptScannerUpdateType](https://create.roblox.com/docs/reference/engine/enums/ScriptScannerUpdateType)
-  * Added EnumItem `Init` (0)
-  * Added EnumItem `Added` (1)
-  * Added EnumItem `Removed` (2)
-* Added Enum [StateReferenceFrame](https://create.roblox.com/docs/reference/engine/enums/StateReferenceFrame)
-  * Added EnumItem `CurrentState` (0)
-  * Added EnumItem `PreviousState` (1)
-  * Added EnumItem `LastObservedState` (2)
-* Removed Enum TagReplicability
+  * Added Property [AvatarAbilityRules.EnableTurning](https://create.roblox.com/docs/reference/engine/classes/AvatarAbilityRules#EnableTurning): bool [⚡ThreadSafety: ReadSafe]
+* Update Class [CaptureService](https://create.roblox.com/docs/reference/engine/classes/CaptureService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
+  * Added Function [CaptureService.CheckUploadCaptureStatusForSupportTicketAsync](https://create.roblox.com/docs/reference/engine/classes/CaptureService#CheckUploadCaptureStatusForSupportTicketAsync) (operationId: string) -> Tuple [🏷️ Yields] {🚧Capture}
+* Update Class [Decal](https://create.roblox.com/docs/reference/engine/classes/Decal) [⬆️Extends: FaceInstance] [🧠Memory: GraphicsTexture]
+  * Added Property [Decal.EmissiveMaskContent](https://create.roblox.com/docs/reference/engine/classes/Decal#EmissiveMaskContent): Content {🚧Read: Basic} [⚡ThreadSafety: ReadSafe]
+  * Added Property [Decal.EmissiveStrength](https://create.roblox.com/docs/reference/engine/classes/Decal#EmissiveStrength): float {🚧Read: Basic} [⚡ThreadSafety: ReadSafe]
+  * Added Property [Decal.EmissiveTint](https://create.roblox.com/docs/reference/engine/classes/Decal#EmissiveTint): Color3 {🚧Read: Basic} [⚡ThreadSafety: ReadSafe]
+* Update Class [TriangleMeshPart](https://create.roblox.com/docs/reference/engine/classes/TriangleMeshPart) [⬆️Extends: BasePart] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ NotBrowsable]
+  * Added Property [TriangleMeshPart.CollisionPrecision](https://create.roblox.com/docs/reference/engine/classes/TriangleMeshPart#CollisionPrecision): float [🏷️ NotReplicated] {🚧Read: Basic} [⚡ThreadSafety: ReadSafe]
+* Update Class [PluginManagementService](https://create.roblox.com/docs/reference/engine/classes/PluginManagementService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
+  * Added Function [PluginManagementService.ListPluginGuisAsync](https://create.roblox.com/docs/reference/engine/classes/PluginManagementService#ListPluginGuisAsync) () -> Dictionary [🏷️ Yields]
+* Update Class [PublishService](https://create.roblox.com/docs/reference/engine/classes/PublishService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
+  * Added Function [PublishService.TagEmoteAnimation](https://create.roblox.com/docs/reference/engine/classes/PublishService#TagEmoteAnimation) (instance: Instance) -> null
+* Update Class [RunService](https://create.roblox.com/docs/reference/engine/classes/RunService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
+  * Added Function [RunService.IsTeamTest](https://create.roblox.com/docs/reference/engine/classes/RunService#IsTeamTest) () -> bool {🚧Basic} [⚡ThreadSafety: Safe]
+* Update Class [ScriptEditorService](https://create.roblox.com/docs/reference/engine/classes/ScriptEditorService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
+  * Added Function [ScriptEditorService.OpenTemporaryDocumentAsync](https://create.roblox.com/docs/reference/engine/classes/ScriptEditorService#OpenTemporaryDocumentAsync) (scriptId: string, initialContent: string) -> Tuple [🏷️ Yields]
+* Update Class [DataModel](https://create.roblox.com/docs/reference/engine/classes/DataModel) [⬆️Extends: ServiceProvider] [🧠Memory: Instances] [🏷️ NotCreatable]
+  * Added Event [DataModel.ServerLowMemoryWarning](https://create.roblox.com/docs/reference/engine/classes/DataModel#ServerLowMemoryWarning)
+* Added Class [StateMachineDefinition](https://create.roblox.com/docs/reference/engine/classes/StateMachineDefinition) {🔒None} [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotReplicated]
+  * Added Property [StateMachineDefinition.NodeId](https://create.roblox.com/docs/reference/engine/classes/StateMachineDefinition#NodeId) [⚡ThreadSafety: ReadSafe]
+* Added Class [StateMachineTransitionDefinition](https://create.roblox.com/docs/reference/engine/classes/StateMachineTransitionDefinition) {🔒None} [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotReplicated]
+* Update Class [StudioWidget](https://create.roblox.com/docs/reference/engine/classes/StudioWidget) [⬆️Extends: StudioObjectBase] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ NotReplicated]
+  * Added Function [StudioWidget.SetMinSize](https://create.roblox.com/docs/reference/engine/classes/StudioWidget#SetMinSize) (width: int, height: int) -> null
+* Update Class [TestService](https://create.roblox.com/docs/reference/engine/classes/TestService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ Service]
+  * Added Function [TestService.SignalProfilingCapture](https://create.roblox.com/docs/reference/engine/classes/TestService#SignalProfilingCapture) (target: string = , options: Dictionary = nil) -> null {🚧InternalTest}
+  * Added Function [TestService.SignalProfilingStart](https://create.roblox.com/docs/reference/engine/classes/TestService#SignalProfilingStart) (target: string = , options: Dictionary = nil) -> null {🚧InternalTest}
+  * Added Function [TestService.SignalProfilingStop](https://create.roblox.com/docs/reference/engine/classes/TestService#SignalProfilingStop) (target: string = ) -> null {🚧InternalTest}
+  * Changed the parameters of Function [TestService.RequestValidationAsync](https://create.roblox.com/docs/reference/engine/classes/TestService#RequestValidationAsync)
+    from: (artifactType: string, artifactName: string, timeoutSeconds: double = 60)
+    to: (module: string, artifactName: string, options: Variant)
+* Update Class [UGCValidationService](https://create.roblox.com/docs/reference/engine/classes/UGCValidationService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
+  * Added Function [UGCValidationService.AreInstanceTreesEquivalent](https://create.roblox.com/docs/reference/engine/classes/UGCValidationService#AreInstanceTreesEquivalent) (expectedTree: Instance, candidateTree: Instance) -> bool
+* Update Class [LuauExpression](https://create.roblox.com/docs/reference/engine/classes/LuauExpression) [⬆️Extends: Object] [🧠Memory: Instances] [🏷️ NotCreatable]
+  * Added Function [LuauExpression.References](https://create.roblox.com/docs/reference/engine/classes/LuauExpression#References) (variableName: string) -> bool
+* Added Enum [AnimationNodeTransitionWhen](https://create.roblox.com/docs/reference/engine/enums/AnimationNodeTransitionWhen)
+  * Added EnumItem `Finished` (0)
+  * Added EnumItem `BeforeFinished` (1)
+* Update Enum [CollisionFidelity](https://create.roblox.com/docs/reference/engine/enums/CollisionFidelity)
+  * Added EnumItem `Tunable` (4)
+  * Removed EnumItem `Scalable`
+* Update Enum [GenerateMomentTextResult](https://create.roblox.com/docs/reference/engine/enums/GenerateMomentTextResult)
+  * Added EnumItem `Filtered` (3)
