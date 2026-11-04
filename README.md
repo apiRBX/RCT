@@ -2,139 +2,255 @@
 
 | Metadata | Details |
 | :--- | :--- |
-| **Version** | `0.745.0.7451137` |
-| **Version Hash** | `version-7062aec9dbe74b14` |
-| **Official Release Notes** | [Release Notes 745](https://create.roblox.com/docs/release-notes/release-notes-745) |
+| **Version** | `0.746.0.7461264` |
+| **Version Hash** | `version-fee454b8e2094ba9` |
+| **Official Release Notes** | [Release Notes 746](https://create.roblox.com/docs/release-notes/release-notes-746) |
 
 ---
 
 ## Changelog
 
-* Update Class [EditableMesh](https://create.roblox.com/docs/reference/engine/classes/EditableMesh) [⬆️Extends: Object] [🧠Memory: Instances] [🏷️ NotCreatable]
-  * Changed the parameters of Function [EditableMesh.AddFace](https://create.roblox.com/docs/reference/engine/classes/EditableMesh#AddFace)
-    from: (vertexIds: Array)
-    to: (vertexIds: Tuple)
-* Added Class [FeatureMatchingSession](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingSession) {🔒None} [⬆️Extends: Object] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ NotReplicated]
-  * Added Function [FeatureMatchingSession.GetChannels](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingSession#GetChannels) {🚧InternalTest}
-  * Added Function [FeatureMatchingSession.GetDimensionCount](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingSession#GetDimensionCount) {🚧InternalTest}
-  * Added Function [FeatureMatchingSession.GetFeatureRow](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingSession#GetFeatureRow) {🚧InternalTest}
-  * Added Function [FeatureMatchingSession.GetFeatureRows](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingSession#GetFeatureRows) {🚧InternalTest}
-  * Added Function [FeatureMatchingSession.GetMetadataRow](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingSession#GetMetadataRow) {🚧InternalTest}
-  * Added Function [FeatureMatchingSession.GetRowCount](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingSession#GetRowCount) {🚧InternalTest}
-  * Added Function [FeatureMatchingSession.GetSchemaName](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingSession#GetSchemaName) {🚧InternalTest}
-  * Added Function [FeatureMatchingSession.GetTagColumns](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingSession#GetTagColumns) {🚧InternalTest}
-  * Added Function [FeatureMatchingSession.StandardizeQuery](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingSession#StandardizeQuery) {🚧InternalTest}
-* Update Class [AnimatedImageService](https://create.roblox.com/docs/reference/engine/classes/AnimatedImageService) [⬆️Extends: Instance] [🧠Memory: Gui] [🏷️ NotCreatable] [🏷️ Service]
-  * Added Function [AnimatedImageService.GetAnimatedImageClipsAsync](https://create.roblox.com/docs/reference/engine/classes/AnimatedImageService#GetAnimatedImageClipsAsync) (content: Content) -> Array [🏷️ Yields]
-  * Added Function [AnimatedImageService.GetAnimatedImageFrameIndexAtTimeAsync](https://create.roblox.com/docs/reference/engine/classes/AnimatedImageService#GetAnimatedImageFrameIndexAtTimeAsync) (content: Content, clipName: string, timePosition: double) -> int [🏷️ Yields]
-* Update Class [AnimationClipProvider](https://create.roblox.com/docs/reference/engine/classes/AnimationClipProvider) [⬆️Extends: Instance] [🧠Memory: Animation] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
-  * Added Function [AnimationClipProvider.ReloadAnimationClipAsync](https://create.roblox.com/docs/reference/engine/classes/AnimationClipProvider#ReloadAnimationClipAsync) (assetId: ContentId) -> AnimationClip [🏷️ Yields] {🚧Animation}
-* Update Class [AnimationPlayer](https://create.roblox.com/docs/reference/engine/classes/AnimationPlayer) [⬆️Extends: Instance] [🧠Memory: Gui]
-  * Added Event [AnimationPlayer.Ended](https://create.roblox.com/docs/reference/engine/classes/AnimationPlayer#Ended)
-  * Added Event [AnimationPlayer.Stopped](https://create.roblox.com/docs/reference/engine/classes/AnimationPlayer#Stopped)
-* Update Class [AssetService](https://create.roblox.com/docs/reference/engine/classes/AssetService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
-  * Added Function [AssetService.GetLatestVersionUriAsync](https://create.roblox.com/docs/reference/engine/classes/AssetService#GetLatestVersionUriAsync) (asset: Content) -> Content [🏷️ Yields] {🚧AssetRead}
-* Update Class [AudioDeviceInput](https://create.roblox.com/docs/reference/engine/classes/AudioDeviceInput) [⬆️Extends: Instance] [🧠Memory: Internal]
-  * Added Property [AudioDeviceInput.Streaming](https://create.roblox.com/docs/reference/engine/classes/AudioDeviceInput#Streaming): bool [🏷️ Hidden] {🚧Read: Audio, Input} [⚡ThreadSafety: ReadSafe]
-* Update Class [AudioSpeechToText](https://create.roblox.com/docs/reference/engine/classes/AudioSpeechToText) [⬆️Extends: Instance] [🧠Memory: Internal]
-  * Added Property [AudioSpeechToText.Streaming](https://create.roblox.com/docs/reference/engine/classes/AudioSpeechToText#Streaming): bool [🏷️ Hidden] {🚧Read: Audio} [⚡ThreadSafety: ReadSafe]
-* Update Class [AvatarClothingRules](https://create.roblox.com/docs/reference/engine/classes/AvatarClothingRules) [⬆️Extends: Instance] [🧠Memory: Instances]
-  * Added Property [AvatarClothingRules.ClassicPantsOverride](https://create.roblox.com/docs/reference/engine/classes/AvatarClothingRules#ClassicPantsOverride): int64 {🚧Read: AvatarAppearance} [⚡ThreadSafety: ReadSafe]
-  * Added Property [AvatarClothingRules.ClassicShirtOverride](https://create.roblox.com/docs/reference/engine/classes/AvatarClothingRules#ClassicShirtOverride): int64 {🚧Read: AvatarAppearance} [⚡ThreadSafety: ReadSafe]
-  * Added Property [AvatarClothingRules.ClassicTShirtOverride](https://create.roblox.com/docs/reference/engine/classes/AvatarClothingRules#ClassicTShirtOverride): int64 {🚧Read: AvatarAppearance} [⚡ThreadSafety: ReadSafe]
-  * Added Property [AvatarClothingRules.LeftShoeAccessoryOverride](https://create.roblox.com/docs/reference/engine/classes/AvatarClothingRules#LeftShoeAccessoryOverride): int64 {🚧Read: AvatarAppearance} [⚡ThreadSafety: ReadSafe]
-  * Added Property [AvatarClothingRules.RightShoeAccessoryOverride](https://create.roblox.com/docs/reference/engine/classes/AvatarClothingRules#RightShoeAccessoryOverride): int64 {🚧Read: AvatarAppearance} [⚡ThreadSafety: ReadSafe]
-  * Removed Property AvatarClothingRules.ClassicPantsAccessoryOverride
-  * Removed Property AvatarClothingRules.ClassicShirtsAccessoryOverride
-  * Removed Property AvatarClothingRules.ClassicTShirtsAccessoryOverride
-  * Removed Property AvatarClothingRules.LeftShoesAccessoryOverride
-  * Removed Property AvatarClothingRules.RightShoesAccessoryOverride
-* Update Class [AvatarCollisionRules](https://create.roblox.com/docs/reference/engine/classes/AvatarCollisionRules) [⬆️Extends: Instance] [🧠Memory: Instances]
-  * Added Property [AvatarCollisionRules.BodyPartsCollidableOnDeath](https://create.roblox.com/docs/reference/engine/classes/AvatarCollisionRules#BodyPartsCollidableOnDeath): bool {🚧Read: AvatarAppearance} [⚡ThreadSafety: ReadSafe]
-* Update Class [CloudClientService](https://create.roblox.com/docs/reference/engine/classes/CloudClientService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
-  * Added Property [CloudClientService.IsCloudClient](https://create.roblox.com/docs/reference/engine/classes/CloudClientService#IsCloudClient): bool [🏷️ ReadOnly] [🏷️ NotReplicated] [⚡ThreadSafety: ReadSafe]
-  * Added Property [CloudClientService.IsRobloxRealityEnvironment](https://create.roblox.com/docs/reference/engine/classes/CloudClientService#IsRobloxRealityEnvironment): bool [🏷️ ReadOnly] [🏷️ NotReplicated] [⚡ThreadSafety: ReadSafe]
-  * Added Property [CloudClientService.RobloxRealityFilterEnabled](https://create.roblox.com/docs/reference/engine/classes/CloudClientService#RobloxRealityFilterEnabled): bool [⚡ThreadSafety: ReadSafe]
-  * Added Property [CloudClientService.SessionTimeLimit](https://create.roblox.com/docs/reference/engine/classes/CloudClientService#SessionTimeLimit): double [🏷️ ReadOnly] [🏷️ NotReplicated] [⚡ThreadSafety: ReadSafe]
-  * Added Function [CloudClientService.GetSessionElapsedTime](https://create.roblox.com/docs/reference/engine/classes/CloudClientService#GetSessionElapsedTime) () -> double
-  * Added Function [CloudClientService.ReleaseReservation](https://create.roblox.com/docs/reference/engine/classes/CloudClientService#ReleaseReservation) (reservationToken: string) -> null
-  * Added Function [CloudClientService.CheckEligibilityAsync](https://create.roblox.com/docs/reference/engine/classes/CloudClientService#CheckEligibilityAsync) (pool: string = ) -> bool [🏷️ Yields]
-  * Added Function [CloudClientService.MakeReservationAsync](https://create.roblox.com/docs/reference/engine/classes/CloudClientService#MakeReservationAsync) (placeId: int64, pool: string = ) -> string [🏷️ Yields]
-  * Added Event [CloudClientService.ReservationExpired](https://create.roblox.com/docs/reference/engine/classes/CloudClientService#ReservationExpired)
-* Update Class [CollectionService](https://create.roblox.com/docs/reference/engine/classes/CollectionService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
-  * Added Function [CollectionService.GetAllCollections](https://create.roblox.com/docs/reference/engine/classes/CollectionService#GetAllCollections) () -> Array {🚧Basic}
-* Added Class [FeatureMatchingService](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingService) {🔒None} [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
-  * Added Function [FeatureMatchingService.CreateTable](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingService#CreateTable)
-  * Added Function [FeatureMatchingService.Load](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingService#Load) {🚧InternalTest}
-  * Added Function [FeatureMatchingService.LoadAsync](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingService#LoadAsync) [🏷️ Yields] {🚧InternalTest}
-* Update Class [GeometryService](https://create.roblox.com/docs/reference/engine/classes/GeometryService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
-  * Added Function [GeometryService.BakeToMeshAsync](https://create.roblox.com/docs/reference/engine/classes/GeometryService#BakeToMeshAsync) (input: Instance, options: Dictionary = nil) -> MeshPart [🏷️ Yields] {🚧CSG}
-* Added Class [IntegrityService](https://create.roblox.com/docs/reference/engine/classes/IntegrityService) {🔒None} [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
-  * Added Callback [IntegrityService.EvaluatePlayerDeviceTrust](https://create.roblox.com/docs/reference/engine/classes/IntegrityService#EvaluatePlayerDeviceTrust) {🚧Consequences}
-* Update Class [LinkingService](https://create.roblox.com/docs/reference/engine/classes/LinkingService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
-  * Added Function [LinkingService.RegisterLuaUrlWithPolicy](https://create.roblox.com/docs/reference/engine/classes/LinkingService#RegisterLuaUrlWithPolicy) (url: string, policy: string) -> null
-* Update Class [MarketplaceService](https://create.roblox.com/docs/reference/engine/classes/MarketplaceService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
-  * Added Function [MarketplaceService.PromptNativePurchaseWithContext](https://create.roblox.com/docs/reference/engine/classes/MarketplaceService#PromptNativePurchaseWithContext) (productId: string, context: Dictionary = nil) -> null
-* Update Class [Player](https://create.roblox.com/docs/reference/engine/classes/Player) [⬆️Extends: Instance] [🧠Memory: Instances]
-  * Added Property [Player.DeviceTrustLevel](https://create.roblox.com/docs/reference/engine/classes/Player#DeviceTrustLevel): PlayerDeviceTrustLevel [🏷️ Hidden] [🏷️ ReadOnly] [🏷️ NotReplicated] {🚧Read: Players, Consequences | Write: Consequences} [⚡ThreadSafety: ReadSafe]
-  * Removed Property Player.StepIdOffset
-* Update Class [Players](https://create.roblox.com/docs/reference/engine/classes/Players) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
-  * Changed the capabilities of Property [Players.BanningEnabled](https://create.roblox.com/docs/reference/engine/classes/Players#BanningEnabled)
-    from: {🚧Read: Players}
-    to: {🚧Read: Players, PluginOrOpenCloud | Write: PluginOrOpenCloud}
-  * Changed the capabilities of Property [Players.UseStrafingAnimations](https://create.roblox.com/docs/reference/engine/classes/Players#UseStrafingAnimations)
-    from: {🚧Read: Players}
-    to: {🚧Read: Players, PluginOrOpenCloud | Write: PluginOrOpenCloud}
-* Update Class [RunService](https://create.roblox.com/docs/reference/engine/classes/RunService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
-  * Added Function [RunService.BindToAnimationParallel](https://create.roblox.com/docs/reference/engine/classes/RunService#BindToAnimationParallel) (function: Function, frequency: StepFrequency = Hz30, priority: int = 2000) -> RBXScriptConnection {🚧Basic}
-  * Added Function [RunService.BindToSimulationParallel](https://create.roblox.com/docs/reference/engine/classes/RunService#BindToSimulationParallel) (function: Function, frequency: StepFrequency = Hz30, priority: int = 2000) -> RBXScriptConnection {🚧Basic}
-* Update Class [SceneAnalysisService](https://create.roblox.com/docs/reference/engine/classes/SceneAnalysisService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
-  * Added Function [SceneAnalysisService.GetCollisionGeometryMemoryAsync](https://create.roblox.com/docs/reference/engine/classes/SceneAnalysisService#GetCollisionGeometryMemoryAsync) () -> Dictionary [🏷️ Yields]
-* Update Class [ScriptEditorService](https://create.roblox.com/docs/reference/engine/classes/ScriptEditorService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
-  * Changed the parameters of Function [ScriptEditorService.OpenTemporaryDocumentAsync](https://create.roblox.com/docs/reference/engine/classes/ScriptEditorService#OpenTemporaryDocumentAsync)
-    from: (scriptId: string, initialContent: string)
-    to: (scriptId: string, initialContent: string, options: Dictionary = nil)
-  * Added Function [ScriptEditorService.OpenTextDocumentDocumentAsync](https://create.roblox.com/docs/reference/engine/classes/ScriptEditorService#OpenTextDocumentDocumentAsync) (textDocument: TextDocument, options: Dictionary = nil) -> Tuple [🏷️ Yields]
-* Update Class [FluidForceSensor](https://create.roblox.com/docs/reference/engine/classes/FluidForceSensor) [⬆️Extends: SensorBase] [🧠Memory: Instances]
-  * Added Property [FluidForceSensor.BuoyancyForce](https://create.roblox.com/docs/reference/engine/classes/FluidForceSensor#BuoyancyForce): Vector3 [🏷️ ReadOnly] [🏷️ NotReplicated] {🚧Read: Basic} [⚡ThreadSafety: ReadSafe]
-  * Added Property [FluidForceSensor.BuoyancyTorque](https://create.roblox.com/docs/reference/engine/classes/FluidForceSensor#BuoyancyTorque): Vector3 [🏷️ ReadOnly] [🏷️ NotReplicated] {🚧Read: Basic} [⚡ThreadSafety: ReadSafe]
-* Update Class [StarterPlayer](https://create.roblox.com/docs/reference/engine/classes/StarterPlayer) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
-  * Changed the security of Property [StarterPlayer.CreateDefaultPlayerModule](https://create.roblox.com/docs/reference/engine/classes/StarterPlayer#CreateDefaultPlayerModule)
+* Update Class [EditableImage](https://create.roblox.com/docs/reference/engine/classes/EditableImage) [⬆️Extends: Object] [🧠Memory: Instances] [🏷️ NotCreatable]
+  * Changed the parameters of Function [EditableImage.DrawCircle](https://create.roblox.com/docs/reference/engine/classes/EditableImage#DrawCircle)
+    from: (center: Vector2, radius: int, color: Color3, transparency: float, combineType: ImageCombineType, antiAliasing: AntiAliasing = Enabled)
+    to: (center: Vector2, radius: int, color: Color3, transparency: float, combineType: ImageCombineType, antiAliasing: AntiAliasing = Enabled, alphaBlendType: ImageAlphaType = Default)
+  * Changed the parameters of Function [EditableImage.DrawImage](https://create.roblox.com/docs/reference/engine/classes/EditableImage#DrawImage)
+    from: (position: Vector2, image: EditableImage, combineType: ImageCombineType)
+    to: (position: Vector2, image: EditableImage, combineType: ImageCombineType, alphaBlendType: ImageAlphaType = Default)
+  * Changed the parameters of Function [EditableImage.DrawLine](https://create.roblox.com/docs/reference/engine/classes/EditableImage#DrawLine)
+    from: (p1: Vector2, p2: Vector2, color: Color3, transparency: float, combineType: ImageCombineType, antiAliasing: AntiAliasing = Enabled)
+    to: (p1: Vector2, p2: Vector2, color: Color3, transparency: float, combineType: ImageCombineType, antiAliasing: AntiAliasing = Enabled, alphaBlendType: ImageAlphaType = Default)
+  * Changed the parameters of Function [EditableImage.DrawRectangle](https://create.roblox.com/docs/reference/engine/classes/EditableImage#DrawRectangle)
+    from: (position: Vector2, size: Vector2, color: Color3, transparency: float, combineType: ImageCombineType)
+    to: (position: Vector2, size: Vector2, color: Color3, transparency: float, combineType: ImageCombineType, alphaBlendType: ImageAlphaType = Default)
+* Update Class [FeatureMatchingSession](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingSession) [⬆️Extends: Object] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ NotReplicated]
+  * Added Function [FeatureMatchingSession.Search](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingSession#Search) (query: buffer, params: FeatureSearchParams = nil) -> Dictionary {🚧InternalTest}
+  * Added Function [FeatureMatchingSession.SearchBatch](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingSession#SearchBatch) (queries: Array, sharedParams: FeatureSearchParams = nil, perQueryParams: Array = {}) -> Array {🚧InternalTest}
+* Added Class [FeatureSearchParams](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams) {🔒None} [⬆️Extends: Object] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ NotReplicated]
+  * Added Property [FeatureSearchParams.AnchorCostScale](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#AnchorCostScale) {🚧Read: InternalTest | Write: InternalTest} [⚡ThreadSafety: ReadSafe]
+  * Added Property [FeatureSearchParams.AnchorIgnoresTagFilters](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#AnchorIgnoresTagFilters) {🚧Read: InternalTest | Write: InternalTest} [⚡ThreadSafety: ReadSafe]
+  * Added Property [FeatureSearchParams.AnchorRow](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#AnchorRow) {🚧Read: InternalTest | Write: InternalTest} [⚡ThreadSafety: ReadSafe]
+  * Added Property [FeatureSearchParams.MaxDistance](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#MaxDistance) {🚧Read: InternalTest | Write: InternalTest} [⚡ThreadSafety: ReadSafe]
+  * Added Property [FeatureSearchParams.MaxResults](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#MaxResults) {🚧Read: InternalTest | Write: InternalTest} [⚡ThreadSafety: ReadSafe]
+  * Added Property [FeatureSearchParams.NormalizationKey](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#NormalizationKey) {🚧Read: InternalTest | Write: InternalTest} [⚡ThreadSafety: ReadSafe]
+  * Added Property [FeatureSearchParams.ReturnChannelCosts](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#ReturnChannelCosts) {🚧Read: InternalTest | Write: InternalTest} [⚡ThreadSafety: ReadSafe]
+  * Added Property [FeatureSearchParams.SelectionMode](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#SelectionMode) {🚧Read: InternalTest | Write: InternalTest} [⚡ThreadSafety: ReadSafe]
+  * Added Property [FeatureSearchParams.SelectionSeed](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#SelectionSeed) {🚧Read: InternalTest | Write: InternalTest} [⚡ThreadSafety: ReadSafe]
+  * Added Property [FeatureSearchParams.SelectionTemperature](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#SelectionTemperature) {🚧Read: InternalTest | Write: InternalTest} [⚡ThreadSafety: ReadSafe]
+  * Added Function [FeatureSearchParams.GetChannelWeights](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#GetChannelWeights) {🚧InternalTest}
+  * Added Function [FeatureSearchParams.GetCostBiases](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#GetCostBiases) {🚧InternalTest}
+  * Added Function [FeatureSearchParams.GetFilters](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#GetFilters) {🚧InternalTest}
+  * Added Function [FeatureSearchParams.GetReturnedFields](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#GetReturnedFields) {🚧InternalTest}
+  * Added Function [FeatureSearchParams.SetChannelWeights](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#SetChannelWeights) {🚧InternalTest}
+  * Added Function [FeatureSearchParams.SetCostBiases](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#SetCostBiases) {🚧InternalTest}
+  * Added Function [FeatureSearchParams.SetFilters](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#SetFilters) {🚧InternalTest}
+  * Added Function [FeatureSearchParams.SetReturnedFields](https://create.roblox.com/docs/reference/engine/classes/FeatureSearchParams#SetReturnedFields) {🚧InternalTest}
+* Update Class [AchievementService](https://create.roblox.com/docs/reference/engine/classes/AchievementService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
+  * Added Function [AchievementService.IsAchievementAvailable](https://create.roblox.com/docs/reference/engine/classes/AchievementService#IsAchievementAvailable) (achievementName: string) -> bool
+* Update Class [AnimationNodeDefinition](https://create.roblox.com/docs/reference/engine/classes/AnimationNodeDefinition) [⬆️Extends: Instance] [🧠Memory: Instances]
+  * Changed the security of Property [AnimationNodeDefinition.NodeId](https://create.roblox.com/docs/reference/engine/classes/AnimationNodeDefinition#NodeId)
     from: {🔒RobloxScriptSecurity}
     to: {🔒None}
-  * Changed the capabilities of Property [StarterPlayer.CreateDefaultPlayerModule](https://create.roblox.com/docs/reference/engine/classes/StarterPlayer#CreateDefaultPlayerModule)
-    from: {🚧Read: Players}
-    to: {🚧Read: Players, PluginOrOpenCloud | Write: PluginOrOpenCloud}
-* Update Class [TestService](https://create.roblox.com/docs/reference/engine/classes/TestService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ Service]
-  * Changed the parameters of Function [TestService.RegisterTest](https://create.roblox.com/docs/reference/engine/classes/TestService#RegisterTest)
-    from: (testName: string, options: Dictionary = nil, callback: Function = nil)
-    to: (testName: string, callback: Function, options: Dictionary = nil)
-* Update Class [TextDocument](https://create.roblox.com/docs/reference/engine/classes/TextDocument) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotBrowsable]
-  * Changed the security of Property [TextDocument.TextContent](https://create.roblox.com/docs/reference/engine/classes/TextDocument#TextContent)
-    from: {🔒PluginSecurity}
+  * Changed the capabilities of Property [AnimationNodeDefinition.NodeId](https://create.roblox.com/docs/reference/engine/classes/AnimationNodeDefinition#NodeId)
+    from: {🚧Read: Animation}
+    to: {🚧Read: Animation | Write: Animation}
+* Update Class [AnimationPlayer](https://create.roblox.com/docs/reference/engine/classes/AnimationPlayer) [⬆️Extends: Instance] [🧠Memory: Gui]
+  * Added Property [AnimationPlayer.Parameters](https://create.roblox.com/docs/reference/engine/classes/AnimationPlayer#Parameters): bool [🏷️ NotReplicated] [🏷️ NotScriptable] [⚡ThreadSafety: ReadSafe]
+  * Added Function [AnimationPlayer.GetParameter](https://create.roblox.com/docs/reference/engine/classes/AnimationPlayer#GetParameter) (name: string) -> Variant
+  * Added Function [AnimationPlayer.GetParameterDefaults](https://create.roblox.com/docs/reference/engine/classes/AnimationPlayer#GetParameterDefaults) () -> Dictionary
+  * Added Function [AnimationPlayer.SetParameter](https://create.roblox.com/docs/reference/engine/classes/AnimationPlayer#SetParameter) (name: string, value: Variant) -> null
+* Update Class [AnimationRigData](https://create.roblox.com/docs/reference/engine/classes/AnimationRigData) [⬆️Extends: Instance] [🧠Memory: Instances]
+  * Removed Function AnimationRigData.LoadFromHumanoid
+* Update Class [AnimationValueNodeDefinition](https://create.roblox.com/docs/reference/engine/classes/AnimationValueNodeDefinition) [⬆️Extends: Instance] [🧠Memory: Instances]
+  * Changed the security of Property [AnimationValueNodeDefinition.NodeId](https://create.roblox.com/docs/reference/engine/classes/AnimationValueNodeDefinition#NodeId)
+    from: {🔒RobloxScriptSecurity}
     to: {🔒None}
-  * Changed the capabilities of Property [TextDocument.TextContent](https://create.roblox.com/docs/reference/engine/classes/TextDocument#TextContent)
+  * Changed the capabilities of Property [AnimationValueNodeDefinition.NodeId](https://create.roblox.com/docs/reference/engine/classes/AnimationValueNodeDefinition#NodeId)
+    from: {🚧Read: Animation}
+    to: {🚧Read: Animation | Write: Animation}
+* Update Class [AssetImportService](https://create.roblox.com/docs/reference/engine/classes/AssetImportService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
+  * Added Function [AssetImportService.PickAnimatedImageFileWithPromptAsync](https://create.roblox.com/docs/reference/engine/classes/AssetImportService#PickAnimatedImageFileWithPromptAsync) () -> string [🏷️ Yields]
+  * Added Function [AssetImportService.PickTextDocumentFileWithPromptAsync](https://create.roblox.com/docs/reference/engine/classes/AssetImportService#PickTextDocumentFileWithPromptAsync) () -> string [🏷️ Yields]
+* Update Class [FeatureMatchingService](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
+  * Added Function [FeatureMatchingService.CreateSearchParams](https://create.roblox.com/docs/reference/engine/classes/FeatureMatchingService#CreateSearchParams) () -> FeatureSearchParams {🚧InternalTest}
+* Update Class [FriendsCallingInstance](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingInstance) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ NotReplicated]
+  * Changed the security of Property [FriendsCallingInstance.CallId](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingInstance#CallId)
+    from: {🔒RobloxSecurity}
+    to: {🔒RobloxScriptSecurity}
+  * Changed the security of Property [FriendsCallingInstance.ConversationId](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingInstance#ConversationId)
+    from: {🔒RobloxSecurity}
+    to: {🔒RobloxScriptSecurity}
+  * Changed the security of Property [FriendsCallingInstance.EndReason](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingInstance#EndReason)
+    from: {🔒RobloxSecurity}
+    to: {🔒RobloxScriptSecurity}
+  * Changed the security of Property [FriendsCallingInstance.InitiatorUserId](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingInstance#InitiatorUserId)
+    from: {🔒RobloxSecurity}
+    to: {🔒RobloxScriptSecurity}
+  * Changed the security of Property [FriendsCallingInstance.IsDeafened](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingInstance#IsDeafened)
+    from: {🔒RobloxSecurity}
+    to: {🔒RobloxScriptSecurity}
+  * Changed the security of Property [FriendsCallingInstance.Phase](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingInstance#Phase)
+    from: {🔒RobloxSecurity}
+    to: {🔒RobloxScriptSecurity}
+  * Changed the security of Property [FriendsCallingInstance.Volume](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingInstance#Volume)
+    from: {🔒RobloxSecurity}
+    to: {🔒RobloxScriptSecurity}
+* Update Class [FriendsCallingParticipant](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingParticipant) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ NotReplicated]
+  * Changed the security of Property [FriendsCallingParticipant.Error](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingParticipant#Error)
+    from: {🔒RobloxSecurity}
+    to: {🔒RobloxScriptSecurity}
+  * Changed the security of Property [FriendsCallingParticipant.IsLocalMuted](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingParticipant#IsLocalMuted)
+    from: {🔒RobloxSecurity}
+    to: {🔒RobloxScriptSecurity}
+  * Changed the security of Property [FriendsCallingParticipant.IsSpeaking](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingParticipant#IsSpeaking)
+    from: {🔒RobloxSecurity}
+    to: {🔒RobloxScriptSecurity}
+  * Changed the security of Property [FriendsCallingParticipant.LeaveReason](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingParticipant#LeaveReason)
+    from: {🔒RobloxSecurity}
+    to: {🔒RobloxScriptSecurity}
+  * Changed the security of Property [FriendsCallingParticipant.Status](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingParticipant#Status)
+    from: {🔒RobloxSecurity}
+    to: {🔒RobloxScriptSecurity}
+  * Changed the security of Property [FriendsCallingParticipant.UserId](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingParticipant#UserId)
+    from: {🔒RobloxSecurity}
+    to: {🔒RobloxScriptSecurity}
+  * Changed the security of Property [FriendsCallingParticipant.Volume](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingParticipant#Volume)
+    from: {🔒RobloxSecurity}
+    to: {🔒RobloxScriptSecurity}
+* Update Class [FriendsCallingService](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
+  * Added Function [FriendsCallingService.AnswerCall](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingService#AnswerCall) (callId: string) -> null
+  * Changed the parameters of Function [FriendsCallingService.EndCall](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingService#EndCall)
+    from: ()
+    to: (callId: string, reason: string)
+  * Added Function [FriendsCallingService.ReceiveCall](https://create.roblox.com/docs/reference/engine/classes/FriendsCallingService#ReceiveCall) (pushPayloadJson: string) -> null
+* Update Class [GamepadService](https://create.roblox.com/docs/reference/engine/classes/GamepadService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
+  * Changed the parameters of Function [GamepadService.EnableGamepadCursor](https://create.roblox.com/docs/reference/engine/classes/GamepadService#EnableGamepadCursor)
+    from: (guiObject: Instance)
+    to: (guiObject: GuiObject = nil)
+* Update Class [GeometryService](https://create.roblox.com/docs/reference/engine/classes/GeometryService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
+  * Added Function [GeometryService.SplitApartAsync](https://create.roblox.com/docs/reference/engine/classes/GeometryService#SplitApartAsync) (parts: Array, options: Dictionary = nil) -> Array [🏷️ Yields] {🚧CSG}
+* Update Class [LayerCollector](https://create.roblox.com/docs/reference/engine/classes/LayerCollector) [⬆️Extends: GuiBase2d] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ NotBrowsable]
+  * Added Property [LayerCollector.InputSinkEnabled](https://create.roblox.com/docs/reference/engine/classes/LayerCollector#InputSinkEnabled): RolloutState {🚧Read: UI, PluginOrOpenCloud | Write: PluginOrOpenCloud} [⚡ThreadSafety: ReadSafe]
+* Update Class [GuiService](https://create.roblox.com/docs/reference/engine/classes/GuiService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
+  * Added Function [GuiService.GetUIScaleOptions](https://create.roblox.com/docs/reference/engine/classes/GuiService#GetUIScaleOptions) () -> Dictionary {🚧UI}
+* Update Class [HapticEffect](https://create.roblox.com/docs/reference/engine/classes/HapticEffect) [⬆️Extends: Instance] [🧠Memory: Instances]
+  * Added Function [HapticEffect.GetWaveformKeys](https://create.roblox.com/docs/reference/engine/classes/HapticEffect#GetWaveformKeys) () -> Array {🚧Input}
+* Update Class [Terrain](https://create.roblox.com/docs/reference/engine/classes/Terrain) [⬆️Extends: BasePart] [🧠Memory: Instances] [🏷️ NotCreatable]
+  * Changed the capabilities of Property [Terrain.Decoration](https://create.roblox.com/docs/reference/engine/classes/Terrain#Decoration)
+    from: {🚧Read: Environment | Write: Environment}
+    to: {🚧Read: Environment | Write: PluginOrOpenCloud}
+  * Changed the capabilities of Property [Terrain.GrassLength](https://create.roblox.com/docs/reference/engine/classes/Terrain#GrassLength)
+    from: {🚧Read: Environment | Write: Environment}
+    to: {🚧Read: Environment | Write: PluginOrOpenCloud}
+* Update Class [WorldRoot](https://create.roblox.com/docs/reference/engine/classes/WorldRoot) [⬆️Extends: Model] [🧠Memory: BaseParts] [🏷️ NotCreatable]
+  * Changed the parameters of Function [WorldRoot.Blockcast](https://create.roblox.com/docs/reference/engine/classes/WorldRoot#Blockcast)
+    from: (cframe: CFrame, size: Vector3, direction: Vector3, params: RaycastParams = RaycastParams{IgnoreWater=false, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}})
+    to: (cframe: CFrame, size: Vector3, direction: Vector3, params: RaycastParams = RaycastParams{IgnoreWater=false, Margin=0, SizeGradient=0, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}})
+  * Changed the parameters of Function [WorldRoot.Raycast](https://create.roblox.com/docs/reference/engine/classes/WorldRoot#Raycast)
+    from: (origin: Vector3, direction: Vector3, raycastParams: RaycastParams = RaycastParams{IgnoreWater=false, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}})
+    to: (origin: Vector3, direction: Vector3, raycastParams: RaycastParams = RaycastParams{IgnoreWater=false, Margin=0, SizeGradient=0, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}})
+  * Changed the parameters of Function [WorldRoot.Shapecast](https://create.roblox.com/docs/reference/engine/classes/WorldRoot#Shapecast)
+    from: (part: BasePart, direction: Vector3, params: RaycastParams = RaycastParams{IgnoreWater=false, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}, cframeOverride: CoordinateFrame? = nil, sizeOverride: Vector3? = nil)
+    to: (part: BasePart, direction: Vector3, params: RaycastParams = RaycastParams{IgnoreWater=false, Margin=0, SizeGradient=0, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}, cframeOverride: CoordinateFrame? = nil, sizeOverride: Vector3? = nil)
+  * Changed the parameters of Function [WorldRoot.Spherecast](https://create.roblox.com/docs/reference/engine/classes/WorldRoot#Spherecast)
+    from: (position: Vector3, radius: float, direction: Vector3, params: RaycastParams = RaycastParams{IgnoreWater=false, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}})
+    to: (position: Vector3, radius: float, direction: Vector3, params: RaycastParams = RaycastParams{IgnoreWater=false, Margin=0, SizeGradient=0, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}})
+* Update Class [Workspace](https://create.roblox.com/docs/reference/engine/classes/Workspace) [⬆️Extends: WorldRoot] [🧠Memory: BaseParts] [🏷️ NotCreatable] [🏷️ Service]
+  * Changed the security of Property [Workspace.AuthorityMode](https://create.roblox.com/docs/reference/engine/classes/Workspace#AuthorityMode)
+    from: {🔒RobloxScriptSecurity}
+    to: {🔒None}
+  * Changed the capabilities of Property [Workspace.AuthorityMode](https://create.roblox.com/docs/reference/engine/classes/Workspace#AuthorityMode)
+    from: {🚧None}
+    to: {🚧Read: Basic | Write: PluginOrOpenCloud}
+  * Added Property [Workspace.InputSinkEnabled](https://create.roblox.com/docs/reference/engine/classes/Workspace#InputSinkEnabled): RolloutState [⚡ThreadSafety: ReadSafe]
+  * Added Property [Workspace.NextGenerationPhysicsSolver](https://create.roblox.com/docs/reference/engine/classes/Workspace#NextGenerationPhysicsSolver): RolloutState {🚧Read: PluginOrOpenCloud | Write: PluginOrOpenCloud} [⚡ThreadSafety: ReadSafe]
+  * Added Property [Workspace.ParticlesUseDynamicWind](https://create.roblox.com/docs/reference/engine/classes/Workspace#ParticlesUseDynamicWind): RolloutState [🏷️ NotScriptable] {🚧Read: Basic | Write: Basic} [⚡ThreadSafety: ReadSafe]
+  * Changed the capabilities of Property [Workspace.PredictiveStreamingMode](https://create.roblox.com/docs/reference/engine/classes/Workspace#PredictiveStreamingMode)
     from: {🚧None}
     to: {🚧Read: PluginOrOpenCloud | Write: PluginOrOpenCloud}
-* Update Class [VoiceChatService](https://create.roblox.com/docs/reference/engine/classes/VoiceChatService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
-  * Added Function [VoiceChatService.lastVoiceChatRemoteOperations](https://create.roblox.com/docs/reference/engine/classes/VoiceChatService#lastVoiceChatRemoteOperations) () -> Dictionary {🚧Audio, Chat}
-* Update Class [TestExecutionContext](https://create.roblox.com/docs/reference/engine/classes/TestExecutionContext) [⬆️Extends: Object] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ NotReplicated]
-  * Added Function [TestExecutionContext.Skip](https://create.roblox.com/docs/reference/engine/classes/TestExecutionContext#Skip) (reason: string = ) -> null
-* Update Class [TestResult](https://create.roblox.com/docs/reference/engine/classes/TestResult) [⬆️Extends: Object] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ NotReplicated]
-  * Added Property [TestResult.SkipReason](https://create.roblox.com/docs/reference/engine/classes/TestResult#SkipReason): string [🏷️ ReadOnly] [🏷️ NotReplicated] [⚡ThreadSafety: ReadSafe]
-* Update Class [TestSuite](https://create.roblox.com/docs/reference/engine/classes/TestSuite) [⬆️Extends: Object] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ NotReplicated]
-  * Changed the parameters of Function [TestSuite.RegisterTest](https://create.roblox.com/docs/reference/engine/classes/TestSuite#RegisterTest)
-    from: (testName: string, options: Dictionary = nil, callback: Function = nil)
-    to: (testName: string, callback: Function, options: Dictionary = nil)
-* Removed Class BulkImportService
-* Update Enum [PartType](https://create.roblox.com/docs/reference/engine/enums/PartType)
-  * Added EnumItem `Capsule` (5)
-* Added Enum [PlayerDeviceTrustDecision](https://create.roblox.com/docs/reference/engine/enums/PlayerDeviceTrustDecision)
-  * Added EnumItem `Accept` (0)
-  * Added EnumItem `Reject` (1)
-* Added Enum [PlayerDeviceTrustLevel](https://create.roblox.com/docs/reference/engine/enums/PlayerDeviceTrustLevel)
-  * Added EnumItem `Pending` (0)
-  * Added EnumItem `Unknown` (1)
-  * Added EnumItem `None` (2)
-  * Added EnumItem `Standard` (3)
-  * Added EnumItem `Full` (4)
+  * Changed the capabilities of Property [Workspace.StreamOutBehavior](https://create.roblox.com/docs/reference/engine/classes/Workspace#StreamOutBehavior)
+    from: {🚧None}
+    to: {🚧Read: PluginOrOpenCloud | Write: PluginOrOpenCloud}
+  * Changed the capabilities of Property [Workspace.StreamingIntegrityMode](https://create.roblox.com/docs/reference/engine/classes/Workspace#StreamingIntegrityMode)
+    from: {🚧None}
+    to: {🚧Read: PluginOrOpenCloud | Write: PluginOrOpenCloud}
+  * Changed the capabilities of Property [Workspace.StreamingMinRadius](https://create.roblox.com/docs/reference/engine/classes/Workspace#StreamingMinRadius)
+    from: {🚧None}
+    to: {🚧Read: PluginOrOpenCloud | Write: PluginOrOpenCloud}
+  * Changed the capabilities of Property [Workspace.StreamingTargetRadius](https://create.roblox.com/docs/reference/engine/classes/Workspace#StreamingTargetRadius)
+    from: {🚧None}
+    to: {🚧Read: PluginOrOpenCloud | Write: PluginOrOpenCloud}
+  * Removed Property Workspace.PrimalPhysicsSolver
+  * Removed Property Workspace.UseInputSink
+* Added Class [PlaceSettings](https://create.roblox.com/docs/reference/engine/classes/PlaceSettings) {🔒None} [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
+  * Added Function [PlaceSettings.GetActiveRollouts](https://create.roblox.com/docs/reference/engine/classes/PlaceSettings#GetActiveRollouts) {🚧PluginOrOpenCloud}
+  * Added Function [PlaceSettings.GetRolloutState](https://create.roblox.com/docs/reference/engine/classes/PlaceSettings#GetRolloutState) {🚧PluginOrOpenCloud}
+  * Added Function [PlaceSettings.SetRolloutState](https://create.roblox.com/docs/reference/engine/classes/PlaceSettings#SetRolloutState) {🚧PluginOrOpenCloud}
+* Update Class [ScriptEditorService](https://create.roblox.com/docs/reference/engine/classes/ScriptEditorService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
+  * Added Function [ScriptEditorService.GetActiveScriptDocument](https://create.roblox.com/docs/reference/engine/classes/ScriptEditorService#GetActiveScriptDocument) () -> ScriptDocument
+  * Added Function [ScriptEditorService.OpenTextDocumentAsync](https://create.roblox.com/docs/reference/engine/classes/ScriptEditorService#OpenTextDocumentAsync) (textDocument: TextDocument, options: Dictionary = nil) -> Tuple [🏷️ Yields]
+  * Added Event [ScriptEditorService.ActiveScriptDocumentChanged](https://create.roblox.com/docs/reference/engine/classes/ScriptEditorService#ActiveScriptDocumentChanged)
+  * Removed Function ScriptEditorService.OpenTextDocumentDocumentAsync
+* Update Class [SerializationService](https://create.roblox.com/docs/reference/engine/classes/SerializationService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
+  * Added Function [SerializationService.DeserializeValue](https://create.roblox.com/docs/reference/engine/classes/SerializationService#DeserializeValue) (buffer: buffer, format: SerializationFormat = Binary) -> Variant {🚧PluginOrOpenCloud}
+  * Added Function [SerializationService.SerializeValue](https://create.roblox.com/docs/reference/engine/classes/SerializationService#SerializeValue) (value: Variant, format: SerializationFormat = Binary) -> buffer {🚧PluginOrOpenCloud}
+* Update Class [SoundService](https://create.roblox.com/docs/reference/engine/classes/SoundService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
+  * Changed the security of Property [SoundService.DefaultListenerLocation](https://create.roblox.com/docs/reference/engine/classes/SoundService#DefaultListenerLocation)
+    from: {🔒PluginSecurity}
+    to: {🔒None}
+  * Changed the capabilities of Property [SoundService.DefaultListenerLocation](https://create.roblox.com/docs/reference/engine/classes/SoundService#DefaultListenerLocation)
+    from: {🚧Read: Audio}
+    to: {🚧Read: Audio, PluginOrOpenCloud | Write: PluginOrOpenCloud}
+  * Changed the security of Function [SoundService.GetInputDevice](https://create.roblox.com/docs/reference/engine/classes/SoundService#GetInputDevice)
+    from: {🔒RobloxScriptSecurity}
+    to: {🔒None}
+  * Changed the capabilities of Function [SoundService.GetInputDevice](https://create.roblox.com/docs/reference/engine/classes/SoundService#GetInputDevice)
+    from: {🚧Audio}
+    to: {🚧Audio, InternalTest}
+* Update Class [StateMachineTransitionDefinition](https://create.roblox.com/docs/reference/engine/classes/StateMachineTransitionDefinition) [⬆️Extends: Instance] [🧠Memory: Instances]
+  * Changed the security of Property [StateMachineTransitionDefinition.TransitionId](https://create.roblox.com/docs/reference/engine/classes/StateMachineTransitionDefinition#TransitionId)
+    from: {🔒RobloxScriptSecurity}
+    to: {🔒None}
+  * Changed the capabilities of Property [StateMachineTransitionDefinition.TransitionId](https://create.roblox.com/docs/reference/engine/classes/StateMachineTransitionDefinition#TransitionId)
+    from: {🚧Read: Animation}
+    to: {🚧Read: Animation | Write: Animation}
+* Update Class [StudioService](https://create.roblox.com/docs/reference/engine/classes/StudioService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service] [🏷️ NotReplicated]
+  * Changed the parameters of Function [StudioService.GizmoRaycast](https://create.roblox.com/docs/reference/engine/classes/StudioService#GizmoRaycast)
+    from: (origin: Vector3, direction: Vector3, raycastParams: RaycastParams = RaycastParams{IgnoreWater=false, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}})
+    to: (origin: Vector3, direction: Vector3, raycastParams: RaycastParams = RaycastParams{IgnoreWater=false, Margin=0, SizeGradient=0, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}})
+* Update Class [TextChatService](https://create.roblox.com/docs/reference/engine/classes/TextChatService) [⬆️Extends: Instance] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ Service]
+  * Changed the security of Property [TextChatService.ChatTranslationEnabled](https://create.roblox.com/docs/reference/engine/classes/TextChatService#ChatTranslationEnabled)
+    from: {🔒Read:None, Write:RobloxScriptSecurity}
+    to: {🔒None}
+  * Changed the capabilities of Property [TextChatService.ChatTranslationEnabled](https://create.roblox.com/docs/reference/engine/classes/TextChatService#ChatTranslationEnabled)
+    from: {🚧Read: Chat}
+    to: {🚧Read: Chat | Write: PluginOrOpenCloud}
+  * Changed the security of Property [TextChatService.CreateDefaultCommands](https://create.roblox.com/docs/reference/engine/classes/TextChatService#CreateDefaultCommands)
+    from: {🔒Read:None, Write:PluginSecurity}
+    to: {🔒None}
+  * Changed the capabilities of Property [TextChatService.CreateDefaultCommands](https://create.roblox.com/docs/reference/engine/classes/TextChatService#CreateDefaultCommands)
+    from: {🚧Read: Chat}
+    to: {🚧Read: Chat | Write: PluginOrOpenCloud}
+  * Changed the security of Property [TextChatService.CreateDefaultTextChannels](https://create.roblox.com/docs/reference/engine/classes/TextChatService#CreateDefaultTextChannels)
+    from: {🔒Read:None, Write:PluginSecurity}
+    to: {🔒None}
+  * Changed the capabilities of Property [TextChatService.CreateDefaultTextChannels](https://create.roblox.com/docs/reference/engine/classes/TextChatService#CreateDefaultTextChannels)
+    from: {🚧Read: Chat}
+    to: {🚧Read: Chat | Write: PluginOrOpenCloud}
+* Update Class [TestFailure](https://create.roblox.com/docs/reference/engine/classes/TestFailure) [⬆️Extends: Object] [🧠Memory: Instances] [🏷️ NotCreatable] [🏷️ NotReplicated]
+  * Removed Function TestFailure.GetContext
+* Removed Class WrapDeformMeshProvider
+* Update Enum [AnimationValueNodeType](https://create.roblox.com/docs/reference/engine/enums/AnimationValueNodeType)
+  * Added EnumItem `FeatureMatching` (2)
+* Added Enum [FeatureMatchingSource](https://create.roblox.com/docs/reference/engine/enums/FeatureMatchingSource)
+  * Added EnumItem `Input` (0)
+  * Added EnumItem `Continuity` (1)
+  * Added EnumItem `Ignore` (2)
+* Added Enum [FeatureSelectionMode](https://create.roblox.com/docs/reference/engine/enums/FeatureSelectionMode)
+  * Added EnumItem `Nearest` (0)
+  * Added EnumItem `WeightedRandom` (1)
+* Added Enum [SerializationFormat](https://create.roblox.com/docs/reference/engine/enums/SerializationFormat)
+  * Added EnumItem `Binary` (0)
+  * Added EnumItem `Json` (1)
+  * Added EnumItem `Luau` (2)
+* Removed Enum PrimalPhysicsSolver
